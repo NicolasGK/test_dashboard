@@ -34,9 +34,9 @@ var myLineChart = new Chart(ctx, {
   data: {
     labels: ["1", "5", "10", "15", "20", "25", "30"],
     datasets: [{
-      label: "Impressions ",
+      label: "Impressions (déc) ",
       lineTension: 0.3,
-      backgroundColor: "rgba(78, 115, 223, 0.05)",
+      backgroundColor: "#ffffff",
       borderColor: "rgba(78, 115, 223, 1)",
       pointRadius: 3,
       pointBackgroundColor: "rgba(78, 115, 223, 1)",
@@ -47,8 +47,26 @@ var myLineChart = new Chart(ctx, {
       pointHitRadius: 10,
       pointBorderWidth: 2,
       data: [100, 30, 300, 150, 200, 200, 150],
-    }],
+    },
+    {
+      label: "Impressions (nov)",
+      lineTension: 0.3,
+      backgroundColor: "#ffffff",
+      borderColor: "#50BEA8",
+      pointRadius: 3,
+      pointBackgroundColor: "#50BEA8",
+      pointBorderColor: "#50BEA8",
+      pointHoverRadius: 3,
+      pointHoverBackgroundColor: "rgba(78, 115, 223, 1)",
+      pointHoverBorderColor: "rgba(78, 115, 223, 1)",
+      pointHitRadius: 10,
+      pointBorderWidth: 2,
+      data: [80, 50, 200, 250, 100, 300, 250],
+    }
+  ],
   },
+
+
   options: {
     maintainAspectRatio: false,
     layout: {
