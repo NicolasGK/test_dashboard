@@ -37,17 +37,32 @@ var myLineChart = new Chart(ctx, {
       label: "Impressions (déc) ",
       lineTension: 0.3,
       backgroundColor: "#ffffff",
-      borderColor: "rgba(78, 115, 223, 1)",
+      borderColor: "#2A6DAB",
       pointRadius: 3,
-      pointBackgroundColor: "rgba(78, 115, 223, 1)",
-      pointBorderColor: "rgba(78, 115, 223, 1)",
+      pointBackgroundColor: "#2A6DAB",
+      pointBorderColor: "#2A6DAB",
       pointHoverRadius: 3,
       pointHoverBackgroundColor: "rgba(78, 115, 223, 1)",
       pointHoverBorderColor: "rgba(78, 115, 223, 1)",
       pointHitRadius: 10,
       pointBorderWidth: 2,
       data: [100, 30, 300, 150, 200, 200, 150],
-    }],
+    },{
+      label: "Impressions (nov) ",
+      lineTension: 0.3,
+      backgroundColor: "#ffffff",
+      borderColor: "#50BEA8",
+      pointRadius: 3,
+      pointBackgroundColor: "#50BEA8",
+      pointBorderColor: "#50BEA8",
+      pointHoverRadius: 3,
+      pointHoverBackgroundColor: "rgba(78, 115, 223, 1)",
+      pointHoverBorderColor: "rgba(78, 115, 223, 1)",
+      pointHitRadius: 10,
+      pointBorderWidth: 2,
+      data: [200, 50, 200, 200, 100, 150, 1000],
+    }
+  ]
   },
 
   options: {
@@ -92,7 +107,7 @@ var myLineChart = new Chart(ctx, {
       }],
     },
     legend: {
-      display: false
+      display: true,
     },
     tooltips: {
       backgroundColor: "rgb(255,255,255)",
