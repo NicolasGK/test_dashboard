@@ -565,11 +565,17 @@ pre code {
   .container, .container-sm {
     max-width: 540px;
   }
+  #sortable #ui-state-default2{
+    width: 35%;
+  }
 }
 
 @media (min-width: 768px) {
   .container, .container-sm, .container-md {
     max-width: 720px;
+  }
+  #sortable #ui-state-default2{
+    width: 35%;
   }
 }
 
@@ -577,11 +583,17 @@ pre code {
   .container, .container-sm, .container-md, .container-lg {
     max-width: 960px;
   }
+  #sortable #ui-state-default2{
+    width: 100%;
+  }
 }
 
 @media (min-width: 1200px) {
   .container, .container-sm, .container-md, .container-lg, .container-xl {
     max-width: 1140px;
+  }
+  #sortable #ui-state-default2{
+    width: 35%;
   }
 }
 
@@ -1325,6 +1337,9 @@ pre code {
     flex-grow: 1;
     max-width: 100%;
   }
+  #sortable #ui-state-default2{
+    width: 100%;
+  }
   .row-cols-xl-1 > * {
     flex: 0 0 100%;
     max-width: 100%;
@@ -1779,6 +1794,9 @@ pre code {
   .table-responsive-sm > .table-bordered {
     border: 0;
   }
+  #sortable #ui-state-default2{
+    width: 100%;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -1790,6 +1808,9 @@ pre code {
   }
   .table-responsive-md > .table-bordered {
     border: 0;
+  }
+  #sortable #ui-state-default2{
+    width: 100%;
   }
 }
 
@@ -4321,6 +4342,9 @@ input[type="button"].btn-block {
     flex-flow: row nowrap;
     justify-content: flex-start;
   }
+  #sortable #ui-state-default2{
+    width: 35%;
+  }
   .navbar-expand-xl .navbar-nav {
     flex-direction: row;
   }
@@ -5403,6 +5427,9 @@ a.badge-dark:focus, a.badge-dark.focus {
 @media (min-width: 1200px) {
   .list-group-horizontal-xl {
     flex-direction: row;
+  }
+  #sortable #ui-state-default2{
+    width: 35%;
   }
   .list-group-horizontal-xl > .list-group-item:first-child {
     border-bottom-left-radius: 0.35rem;
@@ -11288,16 +11315,16 @@ body.sidebar-toggled footer.sticky-footer {
 #sortable { 
   list-style-type: none; 
   padding: 0; 
-  width: 100%; 
+  width: 97%; 
   height: 100%;
   display: flex;
+  flex-wrap: wrap;
 }
-
-#sortable li { 
-  margin: 3px 3px 0px 14px; 
+#sortable li{ 
+  margin: 20px 3px 0px 14px; 
   padding: 1px; 
   float: left; 
-  width: 70%; 
+  width: 99%;
   height: 100%; 
   font-size: 1em; 
   text-align: center; 
@@ -11305,11 +11332,10 @@ body.sidebar-toggled footer.sticky-footer {
   background-color: white;
   border-radius: 5px;
 }
-
 .card-header:first-child{
   cursor: move;
 }
-
-.ui-state-default{
-  cursor: move;
+#sortable #ui-state-default2{
+  width: 100%;
+  min-width: 400px;
 }
