@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
 
-    <title>Twitter - MEOSS</title>
+    <title>Site internet - MEOSS</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -69,8 +69,8 @@
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Canal :</h6>
                         <a class="collapse-item" href="buttons.html">LinkedIn</a>
-                        <a class="collapse-item active" href="cards.html">Twitter</a>
-                        <a class="collapse-item" href="site.html">Site internet</a>
+                        <a class="collapse-item" href="cards.html">Twitter</a>
+                        <a class="collapse-item active" href="site.html">Site internet</a>
                     </div>
                 </div>
             </li>
@@ -363,7 +363,7 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Twitter - MEOSS</h1>
+                        <h1 class="h3 mb-0 text-gray-800">Site internet - MEOSS</h1>
                     </div>
         <!-- Content Row -->
         <div class="row">
@@ -483,6 +483,69 @@
                     </div>
                 </div>
             </div>
+
+
+            <!-- Test graphique drag -->
+            <ul id="sortable">
+                <li id="ui-state-default">
+                    <!-- Card Header - Dropdown -->
+                    <div
+                        class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                        <h6 class="m-0 font-weight-bold text-primary">Impressions (Décembre)</h6>
+                        <div class="dropdown no-arrow">
+                            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                                aria-labelledby="dropdownMenuLink">
+                                <div class="dropdown-header">Dropdown Header:</div>
+                                <a class="dropdown-item" href="#" id="display">Action</a>
+                                <a class="dropdown-item" href="#" id="display2">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card Body -->
+                    <div id="chartarea">
+                        <div id="chartareadiv">
+                            <canvas id="myAreaChart2"></canvas>
+                        </div>
+                    </div>
+                </li>
+
+                <li id="ui-state-default2">
+                    <!-- Card Header - Dropdown -->
+                    <div
+                        class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                        <h6 class="m-0 font-weight-bold text-primary">Impressions (Décembre)</h6>
+                        <div class="dropdown no-arrow">
+                            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                                aria-labelledby="dropdownMenuLink">
+                                <div class="dropdown-header">Dropdown Header:</div>
+                                <a class="dropdown-item" href="#" id="display">Action</a>
+                                <a class="dropdown-item" href="#" id="display2">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card Body -->
+                    <div id="chartarea">
+                        <div id="chartareadiv">
+                            <canvas id="myAreaChart2"></canvas>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            
+            <!-- Fin test graphique drag -->
+            
 
             <!-- Pie Chart -->
             <div class="col-xl-4 col-lg-5">
@@ -684,8 +747,7 @@
     </div>
     <!-- /.container-fluid -->
 
-</div>
-<!-- End of Main Content -->
+
 
 <!-- Footer -->
 <footer class="sticky-footer bg-white">
@@ -696,7 +758,8 @@
     </div>
 </footer>
 <!-- End of Footer -->
-
+</div>
+<!-- End of Main Content -->
 </div>
 <!-- End of Content Wrapper -->
 
@@ -744,6 +807,22 @@ aria-hidden="true">
 <!-- Page level custom scripts -->
 <script src="js/demo/chart-area-demo.js"></script>
 <script src="js/demo/chart-pie-demo.js"></script>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#sortable" ).sortable();
+    $( "#sortable" ).disableSelection();
+  } );
+  </script>
+
+
+
+
 
 </body>
 
