@@ -7733,7 +7733,7 @@ button.bg-dark:focus {
 
 .mr-2,
 .mx-2 {
-  margin-right: 0.5rem !important;
+  margin-right: 1.5rem !important;
 }
 
 .mb-2,
@@ -9621,7 +9621,7 @@ button.bg-dark:focus {
 }
 
 .text-primary {
-  color: #5b72b6 !important;
+  color: #5a5c69  !important;
 }
 
 a.text-primary:hover, a.text-primary:focus {
@@ -9637,7 +9637,7 @@ a.text-secondary:hover, a.text-secondary:focus {
 }
 
 .text-success {
-  color: #4f5e8d !important;
+  color: #fff !important;
 }
 
 a.text-success:hover, a.text-success:focus {
@@ -9645,7 +9645,7 @@ a.text-success:hover, a.text-success:focus {
 }
 
 .text-info {
-  color: rgb(29, 155, 240) !important;
+  color: #fff !important;
 }
 
 a.text-info:hover, a.text-info:focus {
@@ -9653,7 +9653,7 @@ a.text-info:hover, a.text-info:focus {
 }
 
 .text-warning {
-  color: #50BEA8 !important;
+  color: #fff !important;
 }
 
 a.text-warning:hover, a.text-warning:focus {
@@ -10018,6 +10018,7 @@ a:focus {
 
 .text-xs {
   font-size: .7rem;
+  color: white !important;
 }
 
 .text-lg {
@@ -10033,7 +10034,7 @@ a:focus {
 }
 
 .text-gray-300 {
-  color: #dddfeb !important;
+  color: #fff !important;
 }
 
 .text-gray-400 {
@@ -10052,8 +10053,12 @@ a:focus {
   color: #6e707e !important;
 }
 
+.text-gray-800:first-of-type {
+  color: #5a5c69 !important ;
+}
+
 .text-gray-800 {
-  color: #5a5c69 !important;
+  color: #fff !important;
 }
 
 .text-gray-900 {
@@ -10071,6 +10076,7 @@ a:focus {
 
 .border-left-primary {
   border-left: 0.25rem solid #5b72b6 !important;
+  background-color: #5b72b6;
 }
 
 .border-bottom-primary {
@@ -10087,6 +10093,7 @@ a:focus {
 
 .border-left-success {
   border-left: 0.25rem solid #4f5e8d !important;
+  background: #4f5e8d;
 }
 
 .border-bottom-success {
@@ -10095,6 +10102,7 @@ a:focus {
 
 .border-left-info {
   border-left: 0.25rem solid rgb(29, 155, 240) !important;
+  background: #1d9bf0;
 }
 
 .border-bottom-info {
@@ -10103,6 +10111,7 @@ a:focus {
 
 .border-left-warning {
   border-left: 0.25rem solid #50BEA8 !important;
+  background: #50BEA8;
 }
 
 .border-bottom-warning {
