@@ -36,7 +36,7 @@ var myLineChart = new Chart(ctx, {
     datasets: [{
       label: "Impressions (déc) ",
       lineTension: 0.2,
-      backgroundColor: "rgba(42,109,171,0.29735644257703087)",
+      backgroundColor: "rgba(42,109,171,0.1)",
       borderColor: "#2A6DAB",
       pointRadius: 3,
       pointBackgroundColor: "#2A6DAB",
@@ -50,7 +50,7 @@ var myLineChart = new Chart(ctx, {
     },{
       label: "Impressions (nov) ",
       lineTension: 0.2,
-      backgroundColor: "rgba(80,190,168,0.29735644257703087)",
+      backgroundColor: "rgba(80,190,168,0.1)",
       borderColor: "#50BEA8",
       pointRadius: 3,
       pointBackgroundColor: "#50BEA8",
