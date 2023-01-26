@@ -38,7 +38,7 @@ var myLineChart = new Chart(ctx, {
       lineTension: 0.2,
       backgroundColor: "rgba(42,109,171,0.1)",
       borderColor: "#2A6DAB",
-      pointRadius: 3,
+      pointRadius: 0,
       pointBackgroundColor: "#2A6DAB",
       pointBorderColor: "#2A6DAB",
       pointHoverRadius: 3,
@@ -52,7 +52,7 @@ var myLineChart = new Chart(ctx, {
       lineTension: 0.2,
       backgroundColor: "rgba(80,190,168,0.1)",
       borderColor: "#50BEA8",
-      pointRadius: 3,
+      pointRadius: 0,
       pointBackgroundColor: "#50BEA8",
       pointBorderColor: "#50BEA8",
       pointHoverRadius: 3,
@@ -142,10 +142,10 @@ var myLineChart = new Chart(ctx, {
     labels: ["1", "5", "10", "15", "20", "25", "30"],
     datasets: [{
   label: "Impressions (nov)",
-  lineTension: 0.3,
-  backgroundColor: "#ffffff",
+  lineTension: 0.2,
+  backgroundColor: "rgba(80,190,168,0.23855479691876746)",
   borderColor: "#50BEA8",
-  pointRadius: 3,
+  pointRadius: 0,
   pointBackgroundColor: "#50BEA8",
   pointBorderColor: "#50BEA8",
   pointHoverRadius: 3,
@@ -199,7 +199,97 @@ options: {
     }],
   },
   legend: {
-    display: false
+    display: true,
+  },
+  tooltips: {
+    backgroundColor: "rgb(255,255,255)",
+    bodyFontColor: "#858796",
+    titleMarginBottom: 10,
+    titleFontColor: '#6e707e',
+    titleFontSize: 14,
+    borderColor: '#dddfeb',
+    borderWidth: 1,
+    xPadding: 15,
+    yPadding: 15,
+    displayColors: false,
+    intersect: false,
+    mode: 'index',
+    caretPadding: 10,
+    callbacks: {
+      label: function(tooltipItem, chart) {
+        var datasetLabel = chart.datasets[tooltipItem.datasetIndex].label || '';
+        return datasetLabel + ': ' + number_format(tooltipItem.yLabel);
+      }
+    }
+  }
+}
+});
+
+var ctx = document.getElementById("myAreaChart3");
+var myLineChart = new Chart(ctx, {
+  type: 'line',
+  data: {
+    labels: ["1", "5", "10", "15", "20", "25", "30"],
+    datasets: [{
+  label: "Impressions (déc)",
+  lineTension: 0.2,
+  backgroundColor: "rgba(42,109,171,0.23855479691876746)",
+  borderColor: "#2A6DAB",
+  pointRadius: 0,
+  pointBackgroundColor: "#50BEA8",
+  pointBorderColor: "#50BEA8",
+  pointHoverRadius: 3,
+  pointHoverBackgroundColor: "rgba(78, 115, 223, 1)",
+  pointHoverBorderColor: "rgba(78, 115, 223, 1)",
+  pointHitRadius: 10,
+  pointBorderWidth: 2,
+  data: [200, 150, 180, 140, 200, 150, 170],
+}],
+},
+
+options: {
+  maintainAspectRatio: false,
+  layout: {
+    padding: {
+      left: 10,
+      right: 25,
+      top: 25,
+      bottom: 0
+    }
+  },
+  scales: {
+    xAxes: [{
+      time: {
+        unit: 'date'
+      },
+      gridLines: {
+        display: false,
+        drawBorder: false
+      },
+      ticks: {
+        maxTicksLimit: 7
+      }
+    }],
+    yAxes: [{
+      ticks: {
+        maxTicksLimit: 5,
+        padding: 10,
+        // Include a dollar sign in the ticks
+        callback: function(value, index, values) {
+          return '' + number_format(value);
+        }
+      },
+      gridLines: {
+        color: "rgb(234, 236, 244)",
+        zeroLineColor: "rgb(234, 236, 244)",
+        drawBorder: false,
+        borderDash: [2],
+        zeroLineBorderDash: [2]
+      }
+    }],
+  },
+  legend: {
+    display: true,
   },
   tooltips: {
     backgroundColor: "rgb(255,255,255)",
