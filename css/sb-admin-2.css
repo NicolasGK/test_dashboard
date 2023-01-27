@@ -4582,7 +4582,7 @@ input[type="button"].btn-block {
 .card-header {
   padding: 0.75rem 1.25rem;
   margin-bottom: 0;
-  background-color: #f8f9fc;
+  background-color: #2e2e4f;
   border-bottom: 1px solid #e3e6f0;
 }
 
@@ -9624,7 +9624,7 @@ button.bg-dark:focus {
 }
 
 .text-primary {
-  color: #5a5c69  !important;
+  color: #fff  !important;
 }
 
 a.text-primary:hover, a.text-primary:focus {
@@ -11357,17 +11357,20 @@ body.sidebar-toggled footer.sticky-footer {
 }
 #myAreaChart3{
   width: 100%;
-  height: 70%;
+  height: 100%;
 }
 #myPieChart2{
   width: 70%;
-  height: 70%;
-  margin-top: 20px;
+  height: 100%;
+  margin-top: 50px;
 }
-#myBarChart2{
+#myBarChart{
   width: 70%;
-  height: 70%;
-  margin-top: 20px;
+  height: 100%;
+  margin-top: 50px;
+}
+#chartareadiv{
+  background-color: #fff;
 }
 
 
@@ -11376,11 +11379,11 @@ body.sidebar-toggled footer.sticky-footer {
   padding: 1px; 
   float: left; 
   width: 650px;
-  height: 25%; 
+  height: 440px; 
   font-size: 1em; 
   text-align: center; 
   box-shadow: rgb(58 59 69 / 15%) 0px 0.15rem 1.75rem 0px !important;
-  background-color: white;
+  background-color: #fff;
   border-radius: 5px;
   display: flex;
   flex-grow: 1;
@@ -11394,11 +11397,11 @@ body.sidebar-toggled footer.sticky-footer {
   padding: 1px; 
   float: left; 
   width: 600px;
-  height: 100%; 
+  height: 440px; 
   font-size: 1em; 
   text-align: center; 
   box-shadow: rgb(58 59 69 / 15%) 0px 0.15rem 1.75rem 0px !important;
-  background-color: white;
+  background-color: #fff;
   border-radius: 5px;
   display: flex;
   flex-grow: 1;
@@ -11409,11 +11412,11 @@ body.sidebar-toggled footer.sticky-footer {
   padding: 1px; 
   float: left; 
   width: 300px;
-  height: 340px; 
+  height: 440px; 
   font-size: 1em; 
   text-align: center; 
   box-shadow: rgb(58 59 69 / 15%) 0px 0.15rem 1.75rem 0px !important;
-  background-color: white;
+  background-color: #fff;
   border-radius: 5px;
   display: flex;
   flex-grow: 1;
@@ -11424,11 +11427,11 @@ body.sidebar-toggled footer.sticky-footer {
   padding: 1px; 
   float: left; 
   width: 400px;
-  height: 300px; 
+  height: 440px; 
   font-size: 1em; 
   text-align: center; 
   box-shadow: rgb(58 59 69 / 15%) 0px 0.15rem 1.75rem 0px !important;
-  background-color: white;
+  background-color: #fff;
   border-radius: 5px;
   display: flex;
   flex-grow: 1;

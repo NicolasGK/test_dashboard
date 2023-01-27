@@ -190,7 +190,7 @@ options: {
         }
       },
       gridLines: {
-        color: "rgb(234, 236, 244)",
+        color: 'transparent',
         zeroLineColor: "rgb(234, 236, 244)",
         drawBorder: false,
         borderDash: [2],
