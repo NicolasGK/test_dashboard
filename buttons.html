@@ -23,7 +23,7 @@
 
 </head>
 
-<body id="page-linkedin">
+<body id="page-top">
 
     <!-- Page Wrapper -->
     <div id="wrapper">
@@ -449,11 +449,104 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
 
-                        <!-- Area Chart -->
-                        <div class="col-xl-8 col-lg-7">
-                            <div class="card shadow mb-4">
+
+                    <div class="drag">
+                        <ul id="sortable">
+                            <li id="ui-state-default">
+                                <!-- Card Header - Dropdown -->
+                                <div
+                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary">Impressions (Novembre)</h6>
+                                    <div class="dropdown no-arrow">
+                                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                                            aria-labelledby="dropdownMenuLink">
+                                            <div class="dropdown-header">Dropdown Header:</div>
+                                            <a class="dropdown-item" href="#" id="display">Action</a>
+                                            <a class="dropdown-item" href="#" id="display2">Another action</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                    <div class="chart-area">
+                                        <div class="post-column">
+                                            <div class="post-premier">
+                                                <div class="position-post">
+                                                    <p class="gold">1<span class="up-text">er</span></p>
+                                                </div>
+                                                <div class="container-post">
+                                                    <img src="img/blast_dashboard.webp" alt="post sur le demoday de Blast">
+                                                    <div class="fadedbox">
+                                                        <div class="title text">Impression : 966</div>
+                                                        <div class="title text">CTR : 3,2%</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="post-premier">
+                                                <div class="position-post">
+                                                    <p class="silver">2<span class="up-text">ème</span></p>
+                                                </div>
+                                                <div class="container-post">
+                                                    <img src="img/post-fin-annee-2022.webp" alt="post sur le demoday de Blast">
+                                                    <div class="fadedbox">
+                                                        <div class="title text">Impression : 654</div>
+                                                        <div class="title text">CTR : 3,5%</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="post-premier">
+                                                <div class="position-post">
+                                                    <p class="bronze">3<span class="up-text">ème</span></p>
+                                                </div>
+                                                <div class="container-post">
+                                                    <div class="under-container-post">
+                                                        <img src="img/post-remerciements-blast.webp" alt="post sur le demoday de Blast">
+                                                    </div>
+                                                    <div class="fadedbox">
+                                                        <div class="title text">Impression : 654</div>
+                                                        <div class="title text">CTR : 3,5%</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>    
+                                </div>
+                            </li>
+                            <li id="ui-state-default">
+                                <!-- Card Header - Dropdown -->
+                                <div
+                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary">Impressions (Novembre)</h6>
+                                    <div class="dropdown no-arrow">
+                                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                                            aria-labelledby="dropdownMenuLink">
+                                            <div class="dropdown-header">Dropdown Header:</div>
+                                            <a class="dropdown-item" href="#" id="display">Action</a>
+                                            <a class="dropdown-item" href="#" id="display2">Another action</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                    <div class="chart-area">
+                                        <canvas id="myAreaChart"></canvas>
+                                    </div>
+                                </div>
+                            </li>
+                            <li id="ui-state-default2">
                                 <!-- Card Header - Dropdown -->
                                 <div
                                     class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
@@ -476,19 +569,15 @@
                                 <!-- Card Body -->
                                 <div class="card-body">
                                     <div class="chart-area">
-                                        <canvas id="myAreaChart"></canvas>
+                                        <canvas id="myAreaChart2"></canvas>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-
-                        <!-- Pie Chart -->
-                        <div class="col-xl-4 col-lg-5">
-                            <div class="card shadow mb-4">
+                            </li>
+                            <li id="ui-state-default3">
                                 <!-- Card Header - Dropdown -->
                                 <div
                                     class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold text-primary">Principaux canaux</h6>
+                                    <h6 class="m-0 font-weight-bold text-primary">Impressions (Janvier)</h6>
                                     <div class="dropdown no-arrow">
                                         <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -497,8 +586,8 @@
                                         <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
                                             aria-labelledby="dropdownMenuLink">
                                             <div class="dropdown-header">Dropdown Header:</div>
-                                            <a class="dropdown-item" href="#">Action</a>
-                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <a class="dropdown-item" href="#" id="display">Action</a>
+                                            <a class="dropdown-item" href="#" id="display2">Another action</a>
                                             <div class="dropdown-divider"></div>
                                             <a class="dropdown-item" href="#">Something else here</a>
                                         </div>
@@ -506,49 +595,39 @@
                                 </div>
                                 <!-- Card Body -->
                                 <div class="card-body">
-                                    <div class="post-column">
-                                        <div class="post-premier">
-                                            <div class="position-post">
-                                                <p class="gold">1<span class="up-text">er</span></p>
-                                            </div>
-                                            <div class="container-post">
-                                                <img src="img/blast_dashboard.webp" alt="post sur le demoday de Blast">
-                                                <div class="fadedbox">
-                                                    <div class="title text">Impression : 966</div>
-                                                    <div class="title text">CTR : 3,2%</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="post-premier">
-                                            <div class="position-post">
-                                                <p class="silver">2<span class="up-text">ème</span></p>
-                                            </div>
-                                            <div class="container-post">
-                                                <img src="img/post-fin-annee-2022.webp" alt="post sur le demoday de Blast">
-                                                <div class="fadedbox">
-                                                    <div class="title text">Impression : 654</div>
-                                                    <div class="title text">CTR : 3,5%</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="post-premier">
-                                            <div class="position-post">
-                                                <p class="bronze">3<span class="up-text">ème</span></p>
-                                            </div>
-                                            <div class="container-post">
-                                                <div class="under-container-post">
-                                                    <img src="img/post-remerciements-blast.webp" alt="post sur le demoday de Blast">
-                                                </div>
-                                                <div class="fadedbox">
-                                                    <div class="title text">Impression : 654</div>
-                                                    <div class="title text">CTR : 3,5%</div>
-                                                </div>
-                                            </div>
+                                    <div class="chart-pie">
+                                        <canvas id="myPieChart"></canvas>
+                                    </div>
+                                </div>
+                            </li>
+                            <li id="ui-state-default4">
+                                <!-- Card Header - Dropdown -->
+                                <div
+                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary">Impressions (Février)</h6>
+                                    <div class="dropdown no-arrow">
+                                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                                            aria-labelledby="dropdownMenuLink">
+                                            <div class="dropdown-header">Dropdown Header:</div>
+                                            <a class="dropdown-item" href="#" id="display">Action</a>
+                                            <a class="dropdown-item" href="#" id="display2">Another action</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Something else here</a>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
+                                <!-- Card Body -->
+                                <div class="chartbar">
+                                    <div class="chart-bar">
+                                        <canvas id="myBarChart"></canvas>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
 
                     <!-- Content Row -->
@@ -769,6 +848,17 @@
     <script src="js/demo/chart-area-demo.js"></script>
     <script src="js/demo/chart-pie-demo.js"></script>
     <script src="js/demo/chart-bar-demo.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#sortable" ).sortable();
+    $( "#sortable" ).disableSelection();
+  } );
+  </script>
+
+
 
 </body>
 

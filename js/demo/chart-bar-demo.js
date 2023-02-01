@@ -32,10 +32,10 @@ var ctx = document.getElementById("myBarChart");
 var myBarChart = new Chart(ctx, {
   type: 'bar',
   data: {
-    labels: ["January", "February", "March", "April", "May", "June"],
+    labels: ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin"],
     datasets: [{
       label: "Revenue",
-      backgroundColor: "#4e73df",
+      backgroundColor: "#2e2e4f",
       hoverBackgroundColor: "#2e59d9",
       borderColor: "#4e73df",
       data: [4215, 5312, 6251, 7841, 9821, 14984],
@@ -90,10 +90,10 @@ var myBarChart = new Chart(ctx, {
     },
     tooltips: {
       titleMarginBottom: 10,
-      titleFontColor: '#6e707e',
+      titleFontColor: '#fff',
       titleFontSize: 14,
-      backgroundColor: "rgb(255,255,255)",
-      bodyFontColor: "#858796",
+      backgroundColor: "#2e2e4f",
+      bodyFontColor: "#fff",
       borderColor: '#dddfeb',
       borderWidth: 1,
       xPadding: 15,

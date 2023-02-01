@@ -61,6 +61,20 @@ var myLineChart = new Chart(ctx, {
       pointHitRadius: 10,
       pointBorderWidth: 2,
       data: [200, 50, 200, 200, 100, 150, 1000],
+    },{
+      label: "Impressions (jan) ",
+      lineTension: 0.2,
+      backgroundColor: "rgba(46,46,79,0.1)",
+      borderColor: "#2e2e4f",
+      pointRadius: 0,
+      pointBackgroundColor: "#2e2e4f",
+      pointBorderColor: "#2e2e4f",
+      pointHoverRadius: 3,
+      pointHoverBackgroundColor: "rgba(78, 115, 223, 1)",
+      pointHoverBorderColor: "rgba(78, 115, 223, 1)",
+      pointHitRadius: 10,
+      pointBorderWidth: 2,
+      data: [400, 350, 390, 370, 340, 310, 460],
     }
   ]
   },
@@ -110,11 +124,11 @@ var myLineChart = new Chart(ctx, {
       display: true,
     },
     tooltips: {
-      backgroundColor: "rgb(255,255,255)",
-      bodyFontColor: "#858796",
+      backgroundColor: "#2e2e4f",
+      bodyFontColor: "#fff",
       titleMarginBottom: 10,
-      titleFontColor: '#6e707e',
-      titleFontSize: 14,
+      titleFontColor: '#fff',
+      titleFontSize: 16,
       borderColor: '#dddfeb',
       borderWidth: 1,
       xPadding: 15,
@@ -281,6 +295,97 @@ options: {
       },
       gridLines: {
         color: "rgb(234, 236, 244)",
+        zeroLineColor: "rgb(234, 236, 244)",
+        drawBorder: false,
+        borderDash: [2],
+        zeroLineBorderDash: [2]
+      }
+    }],
+  },
+  legend: {
+    display: true,
+  },
+  tooltips: {
+    backgroundColor: "rgb(255,255,255)",
+    bodyFontColor: "#858796",
+    titleMarginBottom: 10,
+    titleFontColor: '#6e707e',
+    titleFontSize: 14,
+    borderColor: '#dddfeb',
+    borderWidth: 1,
+    xPadding: 15,
+    yPadding: 15,
+    displayColors: false,
+    intersect: false,
+    mode: 'index',
+    caretPadding: 10,
+    callbacks: {
+      label: function(tooltipItem, chart) {
+        var datasetLabel = chart.datasets[tooltipItem.datasetIndex].label || '';
+        return datasetLabel + ': ' + number_format(tooltipItem.yLabel);
+      }
+    }
+  }
+}
+});
+
+
+var ctx = document.getElementById("myAreaChart4");
+var myLineChart = new Chart(ctx, {
+  type: 'line',
+  data: {
+    labels: ["1", "5", "10", "15", "20", "25", "30"],
+    datasets: [{
+  label: "Abonnés (all)",
+  lineTension: 0.2,
+  backgroundColor: "rgba(80,190,168,0.23855479691876746)",
+  borderColor: "#000",
+  pointRadius: 0,
+  pointBackgroundColor: "#000",
+  pointBorderColor: "#000",
+  pointHoverRadius: 3,
+  pointHoverBackgroundColor: "rgba(78, 115, 223, 1)",
+  pointHoverBorderColor: "rgba(78, 115, 223, 1)",
+  pointHitRadius: 10,
+  pointBorderWidth: 2,
+  data: [80, 50, 200, 250, 100, 300, 250, 0, 500],
+}],
+},
+
+options: {
+  maintainAspectRatio: false,
+  layout: {
+    padding: {
+      left: 10,
+      right: 25,
+      top: 25,
+      bottom: 0
+    }
+  },
+  scales: {
+    xAxes: [{
+      time: {
+        unit: 'date'
+      },
+      gridLines: {
+        display: false,
+        drawBorder: false
+      },
+      ticks: {
+        maxTicksLimit: 7
+      }
+    }],
+    yAxes: [{
+      ticks: {
+        maxTicksLimit: 5,
+        padding: 10,
+        // Include a dollar sign in the ticks
+        callback: function(value, index, values) {
+          return '' + number_format(value);
+        }
+      },
+      gridLines: {
+        color: 'transparent',
         zeroLineColor: "rgb(234, 236, 244)",
         drawBorder: false,
         borderDash: [2],
