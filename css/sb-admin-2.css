@@ -11345,7 +11345,7 @@ body.sidebar-toggled footer.sticky-footer {
   list-style-type: none; 
   padding: 0; 
   height: 80%;
-  width: 97%; 
+  width: 100%; 
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
